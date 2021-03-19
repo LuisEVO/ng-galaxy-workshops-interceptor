@@ -1,0 +1,11 @@
+
+<div class="container my-4">
+  <div class="row">
+    <div class="col-3" *ngFor="let product of products">
+      <img class="img-thumbnail" [src]="product.image" alt="">
+      <h3 (click)="getDetail(product.id)">{{ product.title }}</h3>
+    </div>
+  
+  </div>
+ 
+</div>
